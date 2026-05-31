@@ -1,0 +1,10 @@
+from urllib.parse import quote, unquote
+
+text = "https://example.com/search?q=hello world"
+
+encoded = quote(text)
+decoded = unquote(encoded)
+
+print("Original:", text)
+print("Encoded :", encoded)
+print("Decoded :", decoded)
