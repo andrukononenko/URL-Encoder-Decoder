@@ -1,0 +1,8 @@
+const text = "https://example.com/search?q=hello world";
+
+const encoded = encodeURIComponent(text);
+const decoded = decodeURIComponent(encoded);
+
+console.log("Original:", text);
+console.log("Encoded :", encoded);
+console.log("Decoded :", decoded);
