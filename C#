@@ -1,0 +1,16 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        string text = "https://example.com/search?q=hello world";
+
+        string encoded = Uri.EscapeDataString(text);
+        string decoded = Uri.UnescapeDataString(encoded);
+
+        Console.WriteLine($"Original: {text}");
+        Console.WriteLine($"Encoded : {encoded}");
+        Console.WriteLine($"Decoded : {decoded}");
+    }
+}
